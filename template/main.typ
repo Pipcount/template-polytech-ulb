@@ -14,16 +14,15 @@
 
 = Introduction
 
-Ceci est une citation : @Exemple
+This is a citation: @Exemple
 
 == Section 1
 
 #lorem(100)
 
 == Section 2
-=== Sous-section
-==== Sous-sous-section
-= Chapitre
+=== Subsection
+==== Subsubsection
 
 #bibliography("biblio.bib", style: "ieee")
 
