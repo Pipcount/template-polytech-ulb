@@ -1,4 +1,4 @@
-#import "lib.typ": report
+#import "@preview/ulb-report:0.1.0": report
 
 #show: report.with(
   title: "Exemple de titre",
