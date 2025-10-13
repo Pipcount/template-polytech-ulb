@@ -3,7 +3,7 @@ Unofficial Typst template for reports at the ULB.
 
 This template is based on the [LaTeX template](https://www.overleaf.com/latex/templates/ulbreport-template/jzjgsqbnswmw)
 
-# Usage
+## Usage
 
 ```Typst
 #import "@preview/ulb-report:0.1.0": report
@@ -30,4 +30,12 @@ This template is based on the [LaTeX template](https://www.overleaf.com/latex/te
 #set heading(numbering: "A.1 -")
 #counter(heading).update(0)
 ```
+
+## Changelog
+
+**0.1.0 - Initial release**
+
+- First page style
+- Table of content
+- Level 1 headings
 
