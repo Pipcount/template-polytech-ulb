@@ -13,6 +13,8 @@
 
   set document(author: authors, title: title)
   set text(size: 12pt, lang: lang)
+
+  // Place the seal on the background
   set page(
     background: place(
       dx: 5cm,
@@ -25,6 +27,7 @@
     )
   )
 
+  // Level 1 headings
   set heading(numbering: "1.1")
   show heading.where(level: 1): he => {
     pagebreak()
@@ -50,13 +53,13 @@
     ]
   }
   
+  // First page
   box(width: 6cm, height: 1.5cm)[
     #align(left + horizon)[
       #logo
       #studies
     ]
   ]
-
   v(2em)
   align(center)[
     #text(weight: "bold")[#course]
@@ -102,17 +105,19 @@
     #date
   ]
 
-  // pagebreak()
+  // Page numbering starting after the first page
   set page(
     background: none,
     numbering: "1",
   )
 
+  // Bold level 1 headings in the outline
   show outline.entry.where(level: 1): i => {
     strong(i)
 
   }
   
+  // Indent at the start of a paragraph and justify
   set par(
     first-line-indent: (
       amount: 1.5em,
